@@ -1,0 +1,26 @@
+<div class="user-prefs">
+  <h4>User Preferences</h4>
+  <table>
+
+
+    <tbody data-bind="foreach: userPrefs">
+      <tr class=".hardLine">
+        <td data-bind="text: key" class="oj-table-data-cell-padding"></td>
+        <td data-bind="text: value" class="oj-table-data-cell-padding"></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <h4>User Settings</h4>
+  <table>
+      <tbody data-bind="foreach: customPrefsControls">
+            <td data-bind="text: value" class="oj-table-data-cell-padding"></td>
+            <td class="oj-table-data-cell-padding">
+                <input type="text" data-bind="attr: {id: value}" />
+            </td>
+      </tbody>
+
+  </table>
+</div>

@@ -1,0 +1,10 @@
+{
+    "name": "user-prefs",
+    "description": "Display E1 User Prefs in JET",
+    "version": "1.0.0",
+    "properties":  {
+        "customprefs": {
+            "type": "string"
+        }
+    }
+}
