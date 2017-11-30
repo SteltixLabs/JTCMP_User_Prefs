@@ -1,6 +1,6 @@
 
 
-define(['knockout'], 
+define(['knockout','ojs/ojlistview'], 
     function(ko) {
         function model(context) {
             // to inspect the context object
@@ -17,7 +17,6 @@ define(['knockout'],
                      "mycustom":"",
                     "jasserver": "http://jas_server_url",
                     "userInfo":    {
-                       "token": "0448Pf+4aytugDOBJsaGdF6iyKpRaWazb9+GC1ubN4qKDw=MDE5MDA4MTg3MDY5MzQxMDcyODQ1MDAzOU15RGV2aWNlMTQ3ODYzODQ2MTQ2Mg==",
                        "langPref": "  ",
                        "locale": "en",
                        "dateFormat": "MDE",
@@ -58,7 +57,7 @@ define(['knockout'],
                     // work with our props
                     //console.log(properties.customprefs);
                     
-                    properties.customprefs.split(' ').forEach((one)=>{
+                    properties.customprefs.split('|').forEach((one)=>{
                         holder.push({
                             value: one
                         })
