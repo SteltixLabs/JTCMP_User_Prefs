@@ -1,3 +1,5 @@
-# JTCMP_User_prefs
+# ojet component template
 
-change test
+## Usage
+Refer to the oj.Composite jsdoc
+http://www.oracle.com/webfolder/technetwork/jet/jsdocs/oj.Composite.html
